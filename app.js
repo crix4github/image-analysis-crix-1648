@@ -28,7 +28,7 @@ app.post('/recognize',app.upload.single('images_file'), vr.recognize);
 app.get('/voices', tts.voices);
 app.post('/speak', tts.speak);
 
-//app.post('/translate', require('./routes/lt').translate);
+app.post('/translate', require('./routes/lt').translate);
 
 // error-handler settings
 require('./config/error-handler')(app);
