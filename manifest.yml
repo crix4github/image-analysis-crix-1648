@@ -10,8 +10,9 @@ applications:
 - services:
   - text-to-speech-service
   - visual-recognition-service
-  name: image-analysis
+  name: image-analysis-crix-1648
   command: node app.js
   path: .
   memory: 512M
-  buildpack: https://github.com/jthomas/nodejs-buildpack.git
+  buildpack: "https://github.com/jthomas/nodejs-buildpack.git"
+  host: image-analysis-crix-1648
