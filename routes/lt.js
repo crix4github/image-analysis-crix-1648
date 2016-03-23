@@ -12,7 +12,7 @@ var languageTranslation = watson.language_translation({
 module.exports.translate = function(req, res, next) {
   var params = {
     text: req.body.text,
-    model_id: 'en-es',
+    model_id: 'en-fr',
   };
   languageTranslation.translate(params, function(error, result) {
     if (error)
